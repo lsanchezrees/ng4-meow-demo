@@ -14,6 +14,10 @@ export class PostsComponent {
 
 	constructor(protected postService: PostService){}
 
+	ngOnInit() : void {
+		this.getAllPosts();
+	}
+
 	getAllPosts() : void {
 		this.postService.getAllPosts()
 			.subscribe(posts=>this.posts = posts);
