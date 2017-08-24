@@ -26,7 +26,7 @@ if(session_status() !== PHP_SESSION_ACTIVE) {
  *
  * We will use this object named $reply to store the results of the call to our API. The status 200 line adds a state variable to $reply called status and initializes it with the integer 200 (success code). The proceeding line adds a state variable to $reply called data. This is where the result of the API call will be stored. We will also update $reply->message as we proceed through the API.
  **/
-$reply = new stdClass();
+$reply = new stdClass(); //don't have a class in php, but angular needs one
 $reply->status = 200;
 $reply->data = null;
 
