@@ -3,7 +3,8 @@
 	<div class="sfooter-content">
 
 		<!-- insert header and navbar -->
-		<?php require_once("lib/header.php");?>
+		<navbar></navbar>
+
 
 		<main class="bg">
 			<div class="container">
@@ -25,6 +26,17 @@
 	</div><!--/.sfooter-content-->
 
 	<!-- insert footer -->
+	<footer class="navbar-fixed-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					=^. .^=
+				</div>
+				<div class="col-sm-6 text-right-sm">
+					Meow!
+				</div>
+			</div>
+		</div>
 	<?php require_once("lib/footer.php");?>
 </body>
 </html>
