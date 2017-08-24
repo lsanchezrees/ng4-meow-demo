@@ -37,13 +37,14 @@
 				<h1>Blabbermouth Kitty Diary</h1>
 
 				<!-- Begin Post Item -->
-				<div class="panel panel-default">
+				<div *ngFor="let post of posts" class="panel panel-default">
 					<div class="panel-heading">
-						<div class="h4">Post Title <small>// post date</small></div>
+						<div class="h4">{{post.postTitle}}<small>// {{post.postDate}}</small></div>
 					</div>
 					<div class="panel-body">
-						This is the post content
+						{{post.PostContent}}
 					</div>
+					<pre>{{post | json}}</pre>
 				</div>
 			</div>
 		</div>
